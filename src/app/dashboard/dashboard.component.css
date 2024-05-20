@@ -1,0 +1,25 @@
+.nav
+{
+   height: 100vh;
+
+}
+
+.colr-back
+{
+  background-color: whitesmoke;
+}
+
+.search
+{
+    border-top: hidden ;
+    border-left:hidden ;
+    border-right:hidden ;
+    background-color: whitesmoke;
+    color: white;
+    width: 50%;
+}
+.whitesmoke
+{
+  background-color: whitesmoke;
+
+}

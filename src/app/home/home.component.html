@@ -1,0 +1,34 @@
+<div class="whitesmoke">
+  <div class=" pt-5  ">
+    <div class="container mt-3 p-3 d-flex col-8 ">
+        <label class="w-25 newslabel text-center p-2">Breaking News</label>
+        <marquee  class="newsline container p-2 mb-2 "><span *ngFor="let new1 of news">{{new1.title}}</span> </marquee>
+    </div>
+
+    <div class="container">
+        <div  class="row">
+          <div *ngFor="let new1 of news" class="col-md-4 ">
+            <div  class = "image   ">
+              <div class="position-relative mt-5 overflow-hidden shadow edit"><img [src]="new1.urlToImage" class="img-fluid    position-relative  " >
+              <div class="action text-center    ">
+                  <h2 class= " p-3"> {{new1.title}}</h2>
+                  <p  >{{new1.description}}</p>
+                  <a href={{new1.url}}>For news details ..</a>
+                  <p> {{new1.publishedAt}}</p>
+                  </div>
+              </div>
+
+
+
+               </div>
+
+              </div>
+          </div>
+
+        </div>
+      </div>
+</div>
+
+
+
+

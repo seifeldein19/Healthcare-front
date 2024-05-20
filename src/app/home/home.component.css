@@ -1,0 +1,49 @@
+.newsline
+{
+    background-color: #92c3fc;
+    color: whitesmoke;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px ;
+
+
+}
+
+.newslabel
+{
+    background-color:#1d87ff    ;
+    color: whitesmoke   ;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius:10px ;
+}
+.action
+{
+
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:rgb(29, 135, 255, .5);
+    color: whitesmoke;
+    border-radius: 20px;
+    transition: .5s;
+
+}
+.edit
+{
+    border-radius: 20px;
+    border: solid 3px #1d87ff ;
+}
+.image:hover .action
+{
+    top: 0%;
+
+
+}
+.whitesmoke
+{
+  background-color: whitesmoke;
+
+}

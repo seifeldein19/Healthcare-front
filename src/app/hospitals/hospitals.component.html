@@ -1,0 +1,67 @@
+<div class="whitesmoke w-100 ">
+  <div class=" container  w-100 ">
+    <div class = "row">
+      <div class="col-md-4">
+         <input  type="search"  name="search" class="search  pb-2  mb-3 mt-3 form-control "#query (keyup)="filter(query.value)" id="searchId" placeholder="search..">
+
+         <div class="shadow p-2 pb-5 style1 mb-3 colorwhite">
+
+         <select class="form-select" (change)="selectCancer($event)"  aria-label="Default select example">
+           <option selected disabled >Speciallity</option>
+           <option value="cancer" >Cancer</option>
+           <option  value="Cardiology_HeartSurgery" >Cardiology& Heart Surgery</option>
+           <option  value="Diabeats_Endacrinology" >Diabeats& Endacrinology</option>
+           <option  value="Ear_Nose_Thort" >Ear,Nose & Thort</option>
+
+           </select>
+
+      </div>
+      <div class="shadow p-2 pb-5 style1 mb-3 colorwhite">
+
+       <select class="form-select"  aria-label="Default select example">
+         <option selected disabled >Location</option>
+         <option  value="cairo" >Cairo</option>
+         <option  value="alex"  >alex</option>
+         <option  value="aswan" >aswan</option>
+         <option  value="tanta" >tanta</option>
+
+         </select>
+    </div>
+    <div class="shadow p-2 pb-5 style1 mb-3 colorwhite">
+
+     <select class="form-select"(change)="selectKindofHospital($event)" aria-label="Default select example">
+       <option selected disabled >Kind Of Hospitals</option>
+       <option  value="private" >Private</option>
+       <option  value="public" >Public</option>
+
+
+       </select>
+     </div>
+
+
+
+      </div>
+      <div class=" col-md-8 mt-3" >
+        <div>
+          <mat-card *ngFor='let hospital of filteredHospitals' class="example-card mt-3 style1">
+              <mat-card-title-group>
+                <mat-card-title class="pb-2">{{hospital.hosbital_name}}</mat-card-title>
+                <mat-card-subtitle>location : {{hospital.location}}</mat-card-subtitle>
+                <mat-card-subtitle>E-mail : {{hospital.email}}</mat-card-subtitle>
+                <mat-card-subtitle>phone: {{hospital.phone}}</mat-card-subtitle>
+                <mat-card-subtitle><button type="button" (click)="confirm()" class="btn btn-primary">Reserve your place</button></mat-card-subtitle>
+                <img mat-card-lg-image class="image1" src={{hospital.image}} >
+
+              </mat-card-title-group>
+
+            </mat-card>
+      </div>
+      <div>
+
+
+
+    </div>
+  </div>
+</div>
+  </div>
+

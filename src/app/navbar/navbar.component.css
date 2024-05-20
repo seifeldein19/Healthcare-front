@@ -1,0 +1,30 @@
+.nav-link
+{
+    cursor: pointer;
+    font-size: 26px;
+    color: white !important;
+}
+.navbar-brand
+{
+    font-size: 30px;
+}
+.navbar
+{
+    background-color: #1866c0 !important;
+    
+   
+}
+.bg
+{
+    
+    background-color: whitesmoke !important;
+}
+
+i{
+    color: white;
+}
+.font
+{
+    font-weight: 400;
+    color: wheat;
+}

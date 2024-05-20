@@ -1,0 +1,31 @@
+.backg
+{
+    
+    
+    color: #1d87ff;
+    
+
+}
+.background
+{
+    background-color: whitesmoke;
+}
+
+.login
+{
+    border-radius: 5px;
+   border: 2px solid #4d9efa;
+}
+
+h1
+{
+    font-family: "Lobster script=latin rev=1";
+    font-size: 30px;
+    font-weight:400;
+}
+.link
+{
+    text-decoration: none;
+    color: white;
+    background-color: #42b72a;
+}

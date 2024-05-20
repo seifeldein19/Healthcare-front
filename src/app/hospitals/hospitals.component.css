@@ -1,0 +1,58 @@
+.cicon
+  {
+    color: rgb(0, 255, 0);
+
+   padding: 10px;
+  }
+  .ciconn
+  {
+    color: red;
+    padding: 10px;
+  }
+
+
+.example-section {
+  font-size: 20px;
+  margin: 12px 0;
+}
+.search
+{
+  border-top: hidden ;
+  border-left:hidden ;
+  border-right:hidden ;
+  border-bottom: 3px solid #1d87ff  !important;
+  background-color: whitesmoke;
+  color: black;
+  width: 32%;
+
+}
+
+.location
+{
+border-top: hidden ;
+  border-left:hidden ;
+  border-right:hidden ;
+  border-bottom: 3px solid #1d87ff  !important;
+  color: black;
+  width: 100%;
+}
+.style1
+{
+  border: 1px solid #1d87ff;
+  border-radius: 4px;
+}
+.whitesmoke
+{
+  background-color: whitesmoke;
+
+}
+.colorwhite
+{
+  background-color: white;
+}
+.image1
+{
+  border-radius: 5px;
+  width: 30%;
+  height: 30%;
+}

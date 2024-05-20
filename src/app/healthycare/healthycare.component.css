@@ -1,0 +1,71 @@
+
+
+.home
+{
+
+    width: 100%;
+    height: 100vh;
+   background-image: url(image/b_bg_0007.png);
+   background-position: center;
+   background-size: 100% 100%;
+   background-attachment: fixed;
+
+}
+.dark
+{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.content h2
+{
+  color:#023047 ;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: cursive;
+}
+h3
+{
+  color:#023047 ;
+  font-family: cursive;
+  font-weight: 600;
+}
+@keyframes animation1
+{
+    5%{ content:  " Yo";}
+    10%{ content: " Your";}
+    20%{ content: " Your he";}
+    30%{ content: " Your heal";}
+    50%{ content: " Your health";}
+    60%{ content: " Your health is ";}
+    70%{ content: "Your health is our ";}
+    80%{ content: " Your health is our respo ";}
+    90%{ content: " Your health is our responsibility ";}
+
+}
+
+.content .slogen::before
+{
+    content: "";
+    animation: animation1 infinite 3s  alternate ,animation2 infinite 3s 6s alternate , animation3 infinite 3s 12s  ;
+}
+
+.home .b2
+{
+ padding: 20 ;
+ margin-top: 20;
+ border-radius: 5px;
+ background-color: #023047;
+ color: #fff;
+ border-color: #fff;
+ font-family: cursive;
+ color:#fff ;
+}
+.home .b2:hover
+{
+  background-color:transparent;
+  color:#023047;
+
+}
+.home h2:hover
+{
+  color:#219ebc;
+}

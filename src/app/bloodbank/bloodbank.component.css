@@ -1,0 +1,17 @@
+.example-section {
+    margin: 12px 0;
+  }
+.colorwhite
+{
+  background-color: white;
+}
+.whitesmoke
+{
+  background-color: whitesmoke;
+
+}
+.style1
+{
+  border: 1px solid #1d87ff;
+  border-radius: 4px;
+}

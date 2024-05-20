@@ -1,0 +1,41 @@
+<div  class="colr-back">
+
+  <div class="nav d-flex ">
+
+      <div class=" nav_links bg-dark col-3  " >
+
+                      <h2 class = "text-white d-block p-4 "><i class="pe-2 fa-solid fa-hospital fa-2x shadow"></i> hospital dashboard </h2>
+                    <a class="text-decoration-none text-white d-block p-4 "  >{{first_name}}</a>
+                    <a class="text-decoration-none text-white d-block p-4  "  href="#requests"  id="requests" >requests <i class="ps-2 fa-solid fa-envelope fa-1x shadow"></i> </a>
+                    <a class="text-decoration-none text-white d-block p-4 " href="#update" id="update" >update <i class="ps-2 fa-solid fa-wrench fa-1x shadow"></i></a>
+
+
+     </div>
+     <div class="  col-8 ms-4 mt-5 " >
+      <div>
+        <mat-card *ngFor="let requests1 of requests"  class="example-card mt-3   w-50">
+            <mat-card-title-group>
+              <mat-card-title class="pb-2">{{requests1.hosbital_name}}</mat-card-title>
+              <mat-card-subtitle>location : {{requests1.address}}</mat-card-subtitle>
+              <mat-card-subtitle>E-mail : asd</mat-card-subtitle>
+              <mat-card-subtitle>phone: 123</mat-card-subtitle>
+              <mat-card-subtitle><button type="button"  class="btn btn-primary">Reserve your place</button></mat-card-subtitle>
+
+
+            </mat-card-title-group>
+
+          </mat-card>
+
+
+    </div>
+    </div>
+
+
+
+
+  </div>
+
+</div>
+
+
+

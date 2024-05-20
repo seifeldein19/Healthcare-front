@@ -1,0 +1,66 @@
+<div class="whitesmoke p-5 h-100">
+  <div class="text-center "><h1 >Reserve your place</h1></div>
+
+  <form [formGroup]='requestForm'(ngSubmit)="submitRequest(requestForm)">
+    <div class="container w-50 shadow ">
+      <div class="row  pt-5  formdesign">
+        <div class="col-md-6">
+          <input class="form-control" formControlName="name" placeholder="Name">
+          <div class="alert alert-danger mt-2" *ngIf="requestForm.get('name')?.errors != null &&requestForm.get('name')?.touched">
+            <p>name is required</p>
+          </div>
+          <input type="number" class="form-control mt-3" formControlName="national_id" placeholder="National Id">
+          <div class="alert alert-danger mt-2" *ngIf="requestForm.get('national_id')?.errors != null &&requestForm.get('national_id')?.touched">
+            <p>National ID is required</p>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+          <input type="number" class="form-control " formControlName="age" placeholder="Age">
+          <div class="alert alert-danger mt-2" *ngIf="requestForm.get('age')?.errors != null &&requestForm.get('age')?.touched">
+            <p>age is required</p>
+          </div>
+          <input type="number" class="form-control mt-3" formControlName="phone" placeholder="Phone Number">
+          <div class="alert alert-danger mt-2" *ngIf="requestForm.get('phone')?.errors != null &&requestForm.get('phone')?.touched">
+            <p>phone is required</p>
+          </div>
+
+        </div>
+        <div class="col-md-12">
+          <input class="form-control mt-3" formControlName="address" placeholder="Address">
+          <div class="alert alert-danger mt-2" *ngIf="requestForm.get('address')?.errors != null &&requestForm.get('address')?.touched">
+            <p>address is required</p>
+          </div>
+          <textarea class="form-control h-50 mt-3 " aria-label="With textarea"formControlName="description" placeholder="description of Disease .."></textarea>
+          
+
+        </div>
+        <div class="col-md-6">
+          <input class="form-control mt-3" formControlName="hosbital_name" placeholder="Hospital Name">
+          <div class="alert alert-danger mt-2" *ngIf="requestForm.get('hosbital_name')?.errors != null &&requestForm.get('hosbital_name')?.touched">
+            <p>hosbital_name is required</p>
+          </div>
+
+        </div>
+        <div class="col-md-3 ">
+          <select class="form-select mt-3" formControlName="speciality" aria-label="Default select example">
+            <option selected disabled >Speciality</option>
+            <option  value="cancer" >cancer</option>
+            <option  value="Ear,Nose,throat" >Ear,Nose,throat</option>
+            <option  value="Long term care" >Long term care</option>
+            <option  value="Geriatrics" >Geriatrics</option>
+
+            </select>
+        </div>
+        <div class="col-md-12 text-center mt-3">
+          <p>Make sure the booking is in two hours because if the reservation is not confirmed it will be cancelled</p>
+        </div>
+        <div class="col-md-12 m-3 text-center"><button type="submit" class="btn btn-primary">Confirm</button></div>
+      </div>
+    </div>
+  </form>
+
+   
+
+
+</div>
